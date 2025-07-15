@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ccbd194d71.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css">
+    <link
+      rel="shortcut icon"
+      href="./images/profile2.png"
+      type="image/x-icon"
+    />
+    <title>Zeeshan Ahmad</title>
+  </head>
+  <body>
+    <section id="home">
+      <header>
+        <nav>
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+          <ul>
+            <li ><a href="" onclick="closeMenu()" id="hide-icon"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <article>
+          <div class="img-container">
+            <img src="./images/profile1.jpg" alt="Profile Picture" />
+            <div class="icons">
+              <a
+                href="https://www.linkedin.com/in/zeeshanahmad8086/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="mailto:zeeshanahmad8086@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+              <a
+                href="https://github.com/zeeshanahmad678
+                        "
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="./images/Zeeshan's Resume.pdf" download="Zeeshan's Resume">
+                    <button id="btn-cv">
+                        <i class="fa-solid fa-download"></i>
+                        Download CV
+                    </button>
+              </a>
+            </div>
+          </div>
+          <div class="about">
+            <h1>Hi! I am a <span id="typed-text">Front-end Developer</span></h1>
+            <p>
+              I'm Zeeshan Ahmad, a Software Engineering student at UET Taxila,
+              passionate developer crafting clean, modern, and user-focused web
+              experiences. I blend creativity with code to build interfaces that
+              are both visually striking and functionally robust.
+            </p>
+          </div>
+        </article>
+      </main>
+    </section>
+    <section id="projects">
+        <h2>My<span>Projects</span></h2>
+        <div class="project-pg1">
+          <div class="project1 project-card">
+                <img src="./images/projects/project1.png" loading="lazy" alt="To Do Now">
+                <h3>To Do Now</h3>
+                <p id="description">A simple and clean task manager built using HTML, CSS, and JavaScript.
+                Users can easily add new tasks, edit them through a prompt, and delete them with a click.
+                Task data is saved in localStorage, ensuring it remains even after refreshing the page.
+                Designed for simplicity, as a beginner.
+                </p>
+                <span id="links">Github Link: </span>
+                <a href="https://github.com/ZeeshanAhmad678/to-do-list" target="_blank">https://github.com/ZeeshanAhmad678/to-do-list</a></p>
+          </div>
+          <div class="project2 project-card">
+                <img src="./images/projects/project2.png" loading="lazy" alt="Silly story Generator">
+                <h3>Silly Story Generator</h3>
+                <p id="description">The Silly Story Generator creates random, funny stories using user input and chance.
+                It includes a custom name field and a U.S./U.K. unit conversion toggle for added flexibility.
+                Each story is uniquely generated for a fun, unpredictable experience.
+                Built with vanilla JavaScript, it's a light and creative project.
+                </p>
+                <span id="links">Github Links: </span>
+                <a href="https://github.com/ZeeshanAhmad678/js-mini-projects/tree/main/Silly%20Story" target="_blank">https://github.com/ZeeshanAhmad678/silly-story</a></p>
+          </div>
+        </div>
+        <div class="project-pg2 project-pg1">
+             <div class="project3 project-card">
+                <img src="./images/projects/project3.png" loading="lazy" alt="guess number">
+                <h3>Guess Number</h3>
+                <p id="description">A simple and interactive Number Guessing Game built with HTML, CSS, and JavaScript.
+                Players guess a random number with hints provided for too high or too low guesses.
+                It's a beginner-friendly project that showcases basic logic and DOM manipulation skills.
+                </p>
+                <span id="links">Github Links: </span>
+                <a href="https://github.com/ZeeshanAhmad678/js-mini-projects/tree/main/Guess%20Number" target="_blank">https://github.com/ZeeshanAhmad678/guess-number-game</a></p>
+          </div>
+             <div class="project2 project-card">
+                <img src="./images/projects/project4.png" loading="lazy" alt="amazon clone">
+                <h3>Amazon Clone</h3>
+                <p id="description"> This project is a front‑end clone of the Amazon website built using HTML and CSS. It replicates the iconic Amazon interface, providing a practical, hands‑on learning experience in UI layout, responsive design, and styling.</p>
+                <span id="links">Github Links: </span>
+                <a href="https://github.com/ZeeshanAhmad678/amazon-clone" target="_blank">https://github.com/ZeeshanAhmad678/amazon-clone</a></p>
+          </div>
+        </div>
+    </section>
+    <section id="certificates">
+        <h2>My<span>Certificates</span></h2>
+        <div class="certificate-pg1">
+            <a href="https://www.coursera.org/account/accomplishments/verify/D8C5NNRC588R" target="_blank">
+            <div class="certificate-card">
+                <h3>META Programming with JavaScript</h3>
+                <p>Issued by: META through Coursera</p>
+            </div>
+            </a>
+            <a href="https://www.coursera.org/account/accomplishments/verify/TFE11S2201VH" target="_blank">
+            <div class="certificate-card">
+                <h3>META Version Control</h3>
+                <p>Issued by: META through Coursera</p>
+            </div>
+            </a>
+        </div>
+        <div class="certificate-pg2 certificate-pg1">
+            <a href="https://www.coursera.org/account/accomplishments/verify/MFXJ7Y23AN1J" target="_blank">
+            <div class="certificate-card">
+                <h3>META Introduction to Front-End Development</h3>
+                <p>Issued by: META through Coursera</p>
+            </div>
+            </a>
+            <a href="https://www.coursera.org/account/accomplishments/verify/Y6XBKBE6A7VC" target="_blank">
+            <div class="certificate-card">
+                <h3>Introduction to Data Engineering</h3>
+                <p>Issued by: IBM through Coursera</p>
+            </div>
+            </a>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Connect with me</h2>
+        <div class="container-connect">
+            <a href="https://www.linkedin.com/in/zeeshanahmad8086/" target="_blank"
+            rel="noopener noreferrer">
+            <div class="linkedin connect">
+               <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            </a>
+
+            <a href="mailto:zeeshanahmad8086@gmail.com" target="_blank"rel="noopenernoreferrer">
+            <div class="email connect">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            </a>
+
+            <a href="https://github.com/zeeshanahmad678" target="_blank" rel="noopenernoreferrer">
+            <div class="github connect">
+               <i class="fa-brands fa-github"></i>  
+            </div>
+            </a>
+
+            <a href="tel:+923426922695" target="_blank" rel="noopenernoreferrer">
+            <div class="phone connect">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            </a>
+
+            <a href="https://wa.me/+923426922695" target="_blank" rel="noopenernoreferrer">
+            <div class="location connect">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            </a>
+        </div>
+        <div class="form-container">
+            <form action="https://script.google.com/macros/s/AKfycbzS325nMCJW9kTyyrpd2bltOIO7xW0zvUugpx7femxjC3HDa9GcrEQQs1dOsjWI7KyZ/exec" method="post">
+                <h2>Send me a message</h2>
+                <p id="labels">
+                     <label for="name">Your Name</label>
+                    <label for="email" id="move">Your Email</label>
+                </p>
+                <p id="inputs">
+                    <input type="text" name="Name" id="name" autocomplete="off" required>
+                    <input type="text" name="Email" id="email" autocomplete="off" required>
+                </p>
+                <p id="inputs">
+                  <p class="errorName">
+                      
+                  </p>
+                  <p class="errorEmail">
+                    
+                  </p>
+                </p>
+            
+                <label for="subject">Subject</label>
+                <input type="text" name="Subject" id="subject" autocomplete="off" >
+            
+                <label for="message">Message</label>
+                <textarea  id="message" name="Message" autocomplete="off" required></textarea>
+
+                <button type="submit" id="submit"><i class="fa-regular fa-paper-plane"></i>Send Message</button>
+               
+                <p id="formSubmitted"></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Made with <i class="fa-solid fa-heart"></i> by <span>Zeeshan Ahmad</span></p>
+        <p>&copy; 2025</p>
+    </footer>
+  </body>
+</html>

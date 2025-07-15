@@ -1,0 +1,399 @@
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Header and Navigation */
+  header {
+    position: fixed;
+    left: 20px;
+    width: calc(100% - 40px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav {
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 0;
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--primary-color);
+    z-index: 1000;
+  }
+
+  ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: var(--font-size-larger);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  ul.show {
+    left: 20%;
+  }
+
+  ul li:first-child {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  #hide-icon {
+    display: block;
+    font-size: 30px;
+    color: var(--primary-color);
+  }
+
+  /* Home Section */
+  section {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  #home {
+    height: 100vh;
+  }
+
+  #home main article {
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 20px 40px;
+    gap: 30px;
+  }
+
+  .img-container {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .img-container .icons {
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .img-container i {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .img-container a #btn-cv {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    width: 200px;
+    height: 45px;
+    margin-top: 50px;
+    font-size: 1rem;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  section h1 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: clamp(24px, 6vw, 40px);
+  }
+
+  .about p {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* Projects Section */
+  #projects {
+    padding: 80px 20px 40px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  #projects h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .project-pg1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .project-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+    margin: 15px 0 10px;
+  }
+
+  .project-card #description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .project-card a {
+    word-break: break-all;
+    font-size: 0.8rem;
+  }
+
+  /* Certificates Section */
+  #certificates {
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px 40px;
+    margin-top: 0;
+  }
+
+  #certificates h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .certificate-pg1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .certificate-card {
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .certificate-card h3 {
+    font-size: 1.2rem;
+    padding: 5px 0;
+  }
+
+  .certificate-card p {
+    font-size: 0.9rem;
+    padding: 5px 0;
+  }
+
+  /* Contact Section */
+  #contact {
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 20px 40px;
+  }
+
+  #contact h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .container-connect {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+  }
+
+  .connect {
+    width: 150px;
+    height: 70px;
+    padding: 15px;
+  }
+
+  .connect i {
+    font-size: 1.5rem;
+  }
+
+  /* Form */
+  .form-container {
+    height: auto;
+    margin-top: 30px;
+  }
+
+  form {
+    height: auto;
+    padding: 30px 20px;
+    margin: 0;
+  }
+
+  form h2 {
+    font-size: 1.3rem;
+    text-align: center !important;
+    margin-bottom: 25px;
+  }
+
+  form #labels {
+    flex-direction: column;
+    margin-bottom: 10px;
+    transform: translateY(20px);
+  }
+  form #labels #move {
+    transform: translateY(80px);
+  }
+  form #inputs {
+    flex-direction: column;
+    gap: 0;
+  }
+  form #inputs #email {
+     transform: translateY(25px);
+  }
+  input {
+    width: 100%;
+    height: 45px;
+    font-size: 1rem;
+    margin: 5px 0 15px;
+  }
+
+  #subject {
+    width: 100%;
+    height: 45px;
+    font-size: 1rem;
+    margin: 5px 0 15px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 120px;
+    font-size: 1rem;
+    margin: 5px 0 20px;
+  }
+
+  label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  #submit {
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+    margin: 20px auto;
+    font-size: 1rem;
+  }
+
+  .errorEmail {
+    position: static;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  #formSubmitted {
+    position: static;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  footer {
+    margin: 40px 0 20px;
+    padding: 20px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+
+  /* Utility classes for JavaScript */
+  .hide-menu {
+    left: -100% !important;
+  }
+
+  .show-menu {
+    left: 0 !important;
+  }
+}
+
+
+/* Additional breakpoint for very small devices */
+@media (max-width: 375px) {
+  .img-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .img-container a #btn-cv {
+    width: 180px;
+    font-size: 0.9rem;
+  }
+
+  .about p {
+    max-width: 300px;
+    font-size: 0.85rem;
+  }
+
+  .project-card,
+  .certificate-card {
+    max-width: 300px;
+  }
+
+  .connect {
+    width: 130px;
+    height: 60px;
+  }
+
+  .connect i {
+    font-size: 1.3rem;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 576px) and (orientation: landscape) {
+  #home {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  #home main article {
+    padding: 100px 20px 20px;
+  }
+
+  .img-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  section h1 {
+    font-size: clamp(20px, 5vw, 32px);
+  }
+}
